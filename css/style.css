@@ -126,12 +126,12 @@ p{
   70%{
     border-right: 0px solid transparent;
     border-left: 0px solid transparent;
-    border-top: 185px solid transparent;
+    border-top: 185px solid black;
   }
   75%{
     border-right: 0px solid transparent;
     border-left: 0px solid transparent;
-    border-top: 185px solid black;
+    border-top: 185px solid transparent;
   }
   100%{
     /* margin-top: 120px; */
