@@ -1,0 +1,142 @@
+body{
+  background: black;
+  position: relative;
+}
+
+.ghost-space{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+@keyframes ghost{
+  0%{margin-left: 0%}
+  5%{background-color: transparent}
+  10%{background-color: blue}
+  15%{background-color: transparent}
+  20%{background-color: blue}
+  25%{background-color: transparent}
+  30%{background-color: blue}
+  35%{background-color: transparent}
+  40%{background-color: blue}
+  45%{background-color: transparent}
+  50%{visibility: hidden;}
+  100%{
+    margin-left: 100%;
+    visibility: hidden;
+  }
+}
+.ghost{
+  animation:ghost 10s linear  infinite running; 
+  position: relative;
+  width: 165px;
+  height: 150px;
+  background: blue;
+  padding-top: 1px; 
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;   
+  margin-top: 15%;
+}
+.eyes{
+background: white;
+margin-top: 30px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+float: left;
+margin-left: 30px;
+}
+.pupil{
+background: black;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+margin-top: 10px;
+margin-left: 25px;
+}
+.bottom{
+position: absolute;
+bottom: -20px;
+left: 20px;
+}
+.frill{
+margin-right: 20px;
+width: 28px;
+height: 40px;
+float: right;
+background-color: black;
+border-radius: 40%;
+}
+.pac-man{
+  animation:pac 10s linear  infinite running; 
+  position: absolute;
+  width: 365px;
+  height: 350px;
+  background: yellow;
+  border-radius: 50%;
+  padding-top: 1px; 
+  top: -100px;
+  right: 0;
+  margin-right: -50%;
+}
+.mouth{
+  animation:mouth 10s infinite ease-out;
+  margin-top: 60px;
+  margin-right: 5px;
+  width: 1px;
+  height: 40px;
+  border-right: 110px solid transparent;
+  border-left: 110px solid transparent;
+  border-top: 185px solid black;
+  transform: rotate(270deg);
+  z-index: 2;
+}
+p{
+  font-size: 48px;
+  font-style: oblique;
+  margin-top: 250px;
+  margin-left: 300px;
+  color: white;
+}
+@keyframes pac{
+  0%{margin-right: -50%;}
+  100%{margin-right: 100%;}
+}
+@keyframes mouth{
+  0%{
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 185px solid transparent;
+  }
+  25%{
+    /* margin-top: 80px; */
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 185px solid transparent;
+  }
+  40%{
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 185px solid black;
+  }
+  50%{
+    /* margin-top: 80px; */
+    border-right: 110px solid transparent;
+    border-left: 110px solid transparent;
+    border-top: 185px solid black;
+  }
+  70%{
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 185px solid transparent;
+  }
+  75%{
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 185px solid black;
+  }
+  100%{
+    /* margin-top: 120px; */
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 185px solid transparent;
+  }
+}
